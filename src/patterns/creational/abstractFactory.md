@@ -49,5 +49,5 @@ pattern to create objects
 isolate client code from concrete objects and their factories
 * abstract factory uses factory method and you can think of them as objects with multiple factory methods
 * adding a new product type needs changes to base factory and all its implementations
-* concrete factories can be singleton as we typically need only one instance of them in code
+* concrete factories can be singleton, as we typically need only one instance of them in code
 * we provide client code with concrete factory instance. Factories can be changed at runtime
