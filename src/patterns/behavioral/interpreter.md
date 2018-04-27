@@ -1,4 +1,4 @@
-# Pattern
+# Interpreter
 
 
 
@@ -13,7 +13,10 @@
 
 ## Example
 
-## Compare   
+## Compare
+Interpreter | PATTERN
+:---:|:---:
+   
 
 ## Pitfalls
 
