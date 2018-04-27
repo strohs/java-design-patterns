@@ -2,12 +2,13 @@ package patterns.behavioral.chainOfResponsibility;
 
 import java.time.LocalDate;
 import java.time.Period;
+
 //Represents a request in our chain of responsibility
 public class LeaveApplication {
 	
 	public enum Type {Sick, PTO, LOP};
 	
-	public enum Status {Pending, Approved, Rejecetd };
+	public enum Status {Pending, Approved, Rejected};
 	
 	private Type type;
 	
@@ -56,7 +57,7 @@ public class LeaveApplication {
 	}
 
 	public void reject(String approverName) {
-		this.status = Status.Rejecetd;
+		this.status = Status.Rejected;
 		this.processedBy = approverName;
 	}
 	
