@@ -48,7 +48,7 @@ we don't track which handler, handled the request and can't reverse the actions 
 
 ## Pitfalls
 * no guarantee that a request will be handled, request could go thru whole chain without being handled
-* chain could be misconfigured, will need to test/code review to nake sure this doesnt happen
+* chain could be misconfigured, will need to test/code review to make sure this doesn't happen
 
 ## Summary
 * you want to decouple sender of request from object which handles the request

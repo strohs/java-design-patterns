@@ -1,6 +1,7 @@
 package patterns.behavioral.command;
 
-//This class is the receiver.
+//This class is the receiver (of commands)
+//a dummy service class that adds and removes members from a mailing list server
 public class EWSService {
 
 	//Add a new member to mailing list
