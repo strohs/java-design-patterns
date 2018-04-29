@@ -48,6 +48,6 @@ Bridge has to be designed up front, so that we can have varying abstractions & i
 * Bridge pattern defines separate inheritance hierarchies for abstractions and implementations and "bridges" these 
 together using composition
 * implementations do not HAVE to define methods that match up with methods in the abstraction
-    * it is common to have "primitive" methods (methods do small amount of work) in the implementor
+    * it is common to have "primitive" methods (methods that do small amount of work) in the implementor
     * abstraction uses these methods to provide its functionality
     

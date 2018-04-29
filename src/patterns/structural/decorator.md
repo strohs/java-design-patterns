@@ -47,7 +47,7 @@ decorator can be thought of as a degenerate composite with only one component | 
     * decorators should only be adding small bits of functionality
 
 ## Summary
-* use decorator when you want to add a small bit of functionality to an existing object
+* use decorator when you want to add a **small bit** of functionality to an existing object
 * a decorator has the same interface as the object it decorates (or contains)
 * decorators allow you to dynamically construct behaviour by using composition
     * a decorator can wrap another decorator which in turn wraps the original object
