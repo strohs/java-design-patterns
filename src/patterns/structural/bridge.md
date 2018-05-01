@@ -4,6 +4,16 @@
 * This is achieved by creating two separate inheritance hierarchies, one for implementation and another for abstraction
 * Composition is used to bridge these two hierarchies
 
+## Motivation
+* Bridge prevents a "Cartesian Product" complexity explosion
+* Example:
+    * Base class ThreadScheduler
+    * can be preemptive or cooperative
+    * can run on windows or linux
+    * now you end up with 2x2 scenario: WindowsPTS, UnixPTS, WindowsCTS, UnixCTS
+* Bridge pattern avoids this class explosion
+    
+
 ## Implementing Bridge
 * start by defining the abstraction needed by the client
     * determine common base operations and define them in the abstraction
@@ -44,7 +54,8 @@ Bridge has to be designed up front, so that we can have varying abstractions & i
 * needs to be designed up front. Adding bridge to existing code base is difficult
 
 ## Summary
-* Use bridge pattern when you want your abstractions and implementations to be decoupled
+* **Use bridge pattern when you want your abstractions and implementations to be decoupled**
+    * a stronger form of encapsulation
 * Bridge pattern defines separate inheritance hierarchies for abstractions and implementations and "bridges" these 
 together using composition
 * implementations do not HAVE to define methods that match up with methods in the abstraction
