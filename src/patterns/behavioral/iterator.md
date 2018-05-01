@@ -1,5 +1,5 @@
 # Iterator
-* how traversal of data structures happens and who makes it happen
+* deals with how traversal of data structures happens and who makes it happen
 * an iterator is a class that facilitates the traversal
     * keeps a reference to the current element
     * knows how to move to a different element
