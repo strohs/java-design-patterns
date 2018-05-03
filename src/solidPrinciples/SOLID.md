@@ -15,7 +15,7 @@
 ## Liskov Substitution Principle
 * you should be able to substitute a subclass for a base class
     * ensures that inheritance is being used correctly
-* violations will often fail the "is a " test
+* violations will often fail the "is a" test
     * a Square "is a" Rectangle but a Rectangle is not a Square
 
     

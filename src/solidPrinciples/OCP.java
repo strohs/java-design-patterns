@@ -1,4 +1,4 @@
-package solid;
+package solidPrinciples;
 
 /**
  * OPEN CLOSED PRINCIPLE
@@ -6,7 +6,6 @@ package solid;
 
 
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 

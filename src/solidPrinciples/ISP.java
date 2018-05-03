@@ -1,4 +1,4 @@
-package solid;
+package solidPrinciples;
 
 /**
  * INTERFACE SEGREGATION PRINCIPLE

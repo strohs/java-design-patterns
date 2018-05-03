@@ -1,4 +1,4 @@
-package solid;
+package solidPrinciples;
 
 import java.io.File;
 import java.io.PrintStream;

@@ -1,4 +1,4 @@
-package solid;
+package solidPrinciples;
 
 /**
  * LISKOV SUBSTITUTION PRINCIPLE

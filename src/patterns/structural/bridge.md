@@ -7,7 +7,7 @@
 ## Motivation
 * Bridge prevents a "Cartesian Product" complexity explosion
 * Example:
-    * Base class ThreadScheduler
+    * Base class: ThreadScheduler
     * can be preemptive or cooperative
     * can run on windows or linux
     * now you end up with 2x2 scenario: WindowsPTS, UnixPTS, WindowsCTS, UnixCTS

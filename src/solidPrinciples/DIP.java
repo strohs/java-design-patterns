@@ -1,4 +1,4 @@
-package solid;
+package solidPrinciples;
 
 /**
  * DEPENDENCY INVERSION PRINCIPLE
@@ -40,6 +40,7 @@ interface RelationshipBrowser {
 
 //relationships is a "Low-Level module", because it simply keeps a list and gives us access to that list
 class Relationships implements RelationshipBrowser {
+
     public List<Person> findAllChildrenOf( String name ) {
 
         return relations.stream()
