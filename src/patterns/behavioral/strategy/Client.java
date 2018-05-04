@@ -9,7 +9,8 @@ public class Client {
     public static void main(String[] args) {
         createOrders();
         //print all orders
-        PrintService service = new PrintService();
+        //PrintService service = new PrintService( new SummaryPrinter() );
+        PrintService service = new PrintService( new DetailPrinter() );
         service.printOrders(orders);
         
     }

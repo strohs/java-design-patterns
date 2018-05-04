@@ -130,11 +130,11 @@ class SpringStatemachineDemo {
             } while ( !parseOK );
 
             // perform the transition
-            machine.sendEvent( ts.get( choice ).getTrigger().getEvent() );
+            //machine.sendEvent( ts.get( choice ).getTrigger().getEvent() );
 
-            if ( machine.getState().getId() == exitState )
-                break;
+            //if ( machine.getState().getId() == exitState )
+            //    break;
         }
-        System.out.println( "And we are done!" );
+        //System.out.println( "And we are done!" );
     }
 }
