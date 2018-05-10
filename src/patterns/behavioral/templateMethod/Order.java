@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
 
+//the object we want to print using template method
 public class Order {
 
     private String id;
