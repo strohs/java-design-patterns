@@ -8,7 +8,16 @@ redefine some of these steps
     * this is referring to the way template method calls other methods implemented in the subclass(es)
 
 ## Motivation
-
+* **a high-level blueprint for an algorithm to be completed by inheritors**
+* algorithms can be decomposed into common parts + specifics
+* strategy pattern does this through composition
+    * the high-level algorithm uses an interface
+    * concrete implementations implement the interface
+* template method does the same thing through inheritance
+    * overall algorithm makes use of an abstract member
+    * inheritors override the abstract members
+    * the parent template method is invoked to orchestrate the calls to the abstract members
+    
 
 ## Implementation Steps
 * start by defining your algorithm

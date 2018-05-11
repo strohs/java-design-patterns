@@ -19,5 +19,9 @@ public class ProjectLead extends AbstractEmployee {
 		return directReports;
 	}
 
-	
+	@Override
+	//can implement accept in AbstractEmployee because using "this" would return AbstractEmployee
+	public void accept( Visitor visitor ) {
+		visitor.visit( this );
+	}
 }

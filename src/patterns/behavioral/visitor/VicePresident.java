@@ -11,12 +11,18 @@ public class VicePresident extends AbstractEmployee{
 
 	public VicePresident(String name, Employee...employees) {
 		super(name);
-		Arrays.stream(employees).forEach(directReports::add);
+        directReports.addAll( Arrays.asList( employees ) );
 	}
 	
 	@Override
 	public Collection<Employee> getDirectReports() {
 		return directReports;
+	}
+
+	@Override
+	//can implement accept in AbstractEmployee because using "this" would return AbstractEmployee
+	public void accept( Visitor visitor ) {
+		visitor.visit( this );
 	}
 
 }

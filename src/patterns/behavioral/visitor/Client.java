@@ -6,9 +6,19 @@ import java.util.Random;
 public class Client {
 
 	public static void main(String[] args) {
-		
+		Employee emps = Client.buildOrganization();
+		Visitor visitor = new PrintVisitor();
+        visitOrgStructure( emps, visitor );
+//        System.out.println("==================================================");
+//        visitor = new AppraisalVisitor();
+//        visitOrgStructure( emps, visitor );
 		
 	}
+
+	private static void visitOrgStructure( Employee emp, Visitor visitor ) {
+	    emp.accept( visitor );
+	    emp.getDirectReports().forEach( e -> visitOrgStructure( e, visitor ) );
+    }
 
 	private static Employee buildOrganization() {
 		

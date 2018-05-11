@@ -13,5 +13,10 @@ public class Programmer extends AbstractEmployee {
 	}
 
 
-	
+
+	@Override
+    //can implement accept in AbstractEmployee because using "this" would return AbstractEmployee
+	public void accept( Visitor visitor ) {
+		visitor.visit( this );
+	}
 }
