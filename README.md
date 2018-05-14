@@ -4,7 +4,7 @@ about each pattern.
 
 
 ## Creational
-* deal with creation of objects from classes
+* deal with creation of objects from classes   
 
 #### Builder
 * logic related to object construction is removed from client code and abstracted into a separate "builder" class
