@@ -1,4 +1,5 @@
 # Adapter (aka Wrapper)
+* **getting the interface you want from the interface you have**
 * you have an existing object which provides the functionality you need, but your code can't use this object because
 it expects and object with a different interface
 * using Adapter, you can make the existing object work with the client by adapting the object to the client's expected

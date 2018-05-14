@@ -67,8 +67,8 @@ becomes quite difficult to manage them
 
 
 ## Summary                                                                                            
-* you want a stand-in or placeholder object, or you want to **control access** to a real object's method(s), then you can use
-a proxy pattern
+* you want a stand-in or placeholder object, or you want to **control access** to a real object's method(s), then you 
+can use a proxy pattern
 * proxies implement the same interface as the real object. It delegates actual functionality to the real object.
 * proxies are either given the real object or they create one when needed. Some proxies talk to remote service behind
 the scenes
