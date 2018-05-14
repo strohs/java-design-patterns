@@ -8,7 +8,7 @@
     * you do not check for null on every call
 * There is no option of telling A *not* to use an instance of B
     * its use is hard-coded
-* Thus, we build a no-op non-functioning inheritor of B (or some interface that B implements) and pass it into A
+    * Thus, we build a no-op non-functioning inheritor of B (or some interface that B implements) and pass it into A
 
 
 ## Implementation Steps

@@ -50,4 +50,4 @@ has access to properties it needs for doing interpretation | needs an observable
 * each rule in the language becomes an expression class in the interpreter pattern
     * a terminal expression provides implementation of interpret method
     * a non-terminal expression holds other expressions and calls interpret on its children
-* no guidance on how to build you Abstract Syntax Tree, you decide how to do this
+* no guidance on how to build your Abstract Syntax Tree, you decide how to do this
