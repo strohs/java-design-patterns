@@ -2,8 +2,8 @@
 Gang of Four design patterns implemented in Java, along with notes (implementation details,pitfalls,etc..) 
 about each pattern.
 
-## Summaries
-### Creational
+
+## Creational
 * deal with creation of objects from classes
 
 #### Builder
@@ -44,11 +44,11 @@ then you should consider object pool pattern
     * relies on client code returning objects to the pool once client code is finished with the object
     * the pool must handle synchronization issues efficiently as well as reset object state before returning to the pool
     
-### Structural
+## Structural
 * structural patterns deal with how classes and objects are arranged or composed. Using composition and inheritance 
 you can solve some interesting design problems
 
 
-### Behavioral
+## Behavioral
 * behavioral patterns describe how classes and objects interact and communicate with each other
 
