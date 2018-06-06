@@ -36,7 +36,7 @@ the abstraction
 ## Design Considerations
 * Bridge provides great extensibility by allowing us to change abstraction and implementor independently.
     * you can build and package them separately to modularize the overall system (eg. in separate jar files)
-* By using Abstract Factory pattern ro create abstraction objects with correct implementation you can de-couple
+* By using Abstract Factory pattern to create abstraction objects with correct implementation you can de-couple
 concrete implementors from abstraction
 
 ## Examples of Bridge Pattern

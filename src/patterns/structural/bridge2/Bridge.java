@@ -1,7 +1,9 @@
 package patterns.structural.bridge2;
 
 import com.google.inject.AbstractModule;
+import com.google.inject.Guice;
 import com.google.inject.Inject;
+import com.google.inject.Injector;
 
 interface Renderer {
     void renderCircle( float radius );
@@ -73,7 +75,7 @@ class BridgeDemo {
         circle.resize( 2 );
         circle.draw();
 
-        // todo: Google Guice
+        // todo: Google Guice  so that we can properly inject the Renderer a shape needs
 //    Injector injector = Guice.createInjector(new ShapeModule());
 //    Circle instance = injector.getInstance(Circle.class);
 //    instance.radius = 3;
