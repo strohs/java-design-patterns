@@ -84,7 +84,7 @@ class RectangleFactory
 
 class LSPDemo
 {
-  // maybe conform to ++
+
   static void useIt(Rectangle r)
   {
     int width = r.getWidth();
@@ -97,8 +97,9 @@ class LSPDemo
     useIt(rc);
 
     Rectangle sq = new Square();
+    //LSP is broken because the each setter method for the Square class sets both width and height
     sq.setHeight(5);
-    sq.setWidth(10);
+    //sq.setWidth(10);
     useIt(sq);
   }
 }

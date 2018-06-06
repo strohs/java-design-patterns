@@ -41,11 +41,13 @@ class ProductFilter {
     public Stream<Product> filterBySizeAndColor( List<Product> products, Size size, Color color ) {
         return products.stream().filter( p -> p.size == size && p.color == color );
     }
-    // state space explosion
+    // Adding another criteria to filter by (e.g. Price) will lead to a state space explosion
     // 3 criteria = 7 methods
+    //This violates open closed principle because we have to modify (and probably retest) a class we already made
 }
 
 // we introduce two new interfaces that are open for extension
+// Note that "Specification" is an enterprise design pattern, not a Gang of Four
 interface Specification <T> {
     boolean isSatisfied( T item );
 }
@@ -115,9 +117,9 @@ class OCPDemo {
         pf.filterByColor( products, Color.GREEN )
                 .forEach( p -> System.out.println( " - " + p.name + " is green" ) );
 
-        // ^^ BEFORE
+        // ^^ BEFORE (using ProductFilter)
 
-        // vv AFTER
+        // vv AFTER (using Specification and BetterFilter)
         BetterFilter bf = new BetterFilter();
         System.out.println( "Green products (new):" );
         bf.filter( products, new ColorSpecification( Color.GREEN ) )

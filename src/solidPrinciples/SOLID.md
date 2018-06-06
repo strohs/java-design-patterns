@@ -28,10 +28,10 @@
 ## Dependency Inversion Principle
 * High level modules should not depend on low-level modules
     * both should depend on abstractions
-        * abstraction here means an abstract class or an interface
+        * **abstraction here means an abstract class or an interface**
 * Abstractions should not depend on details
     * details should depend on abstractions
-    * if you can use abstract classes and interfaces then use them
+    * **if you can use abstract classes and interfaces then use them**
     
     
 

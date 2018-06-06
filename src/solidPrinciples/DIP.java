@@ -51,8 +51,7 @@ class Relationships implements RelationshipBrowser {
     }
 
     // Triplet class requires javatuples
-    private List<Triplet<Person, Relationship, Person>> relations =
-            new ArrayList<>();
+    private List<Triplet<Person, Relationship, Person>> relations = new ArrayList<>();
 
     public List<Triplet<Person, Relationship, Person>> getRelations() {
         return relations;
