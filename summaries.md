@@ -1,4 +1,5 @@
-## Creational
+Creational
+=======================================================================
 Creational patterns deal with creation of objects from classes   
 
 #### Builder
@@ -26,20 +27,24 @@ Creational patterns deal with creation of objects from classes
 * a class is instantiated once (and only once)
 * the singleton is accessed globally through a single access point (via a method or field)
 * it's possible to create "eager" singletons as well as "lazily loaded" singletons
-    * eager - "classic" singleton uses "double checked" locking and a volatile field (have to deal with synchronization)
+    * eager - "classic" singleton uses "double checked" locking and a volatile field (have to deal with 
+    synchronization)
     * lazy - there is also the "holder idiom" (don't have to deal with synchronization issues)
-    * eager - can also use "enums" to create singletons, could be a hard-sell due to notions of what a enum should be used for
+    * eager - can also use "enums" to create singletons, could be a hard-sell due to notions of what a enum 
+    should be used for
     
 #### Object Pool
-* if the cost of creating in instance of a class is high and you need a large number of them for a "short period of time"
-then you should consider object pool pattern
+* if the cost of creating in instance of a class is high and you need a large number of them for a 
+"short period of time" then you should consider object pool pattern
 * objects in the pool are pre-created and unused instances are collected in a memory cache
 * complicated to implement
     * have to decide what to do when pool is empty and there is demand for a object
     * relies on client code returning objects to the pool once client code is finished with the object
-    * the pool must handle synchronization issues efficiently as well as reset object state before returning to the pool
+    * the pool must handle synchronization issues efficiently as well as reset object state before 
+    returning to the pool
     
-## Structural
+Structural
+==============================================================
 Structural patterns deal with how classes and objects are arranged or composed. Using composition and inheritance 
 you can solve some interesting design problems
 
@@ -92,9 +97,10 @@ provide a simple interface for a client, that provides the same functionality
 
 #### Flyweight
 * **space optimization**
-* flyweight is used to minimize memory usage or computational expenses by sharing as much as possible with similar objects
-* use flyweight if you need a large number of objects of a class where you can easily separate out state that can be
-shared and state that can be externalized
+* flyweight is used to minimize memory usage or computational expenses by sharing as much as possible with 
+similar objects
+* use flyweight if you need a large number of objects of a class where you can easily separate out state that 
+can be shared and state that can be externalized
 
 #### Proxy
 * **a class that functions as an "interface" to a particular resource that needs some added functionality**
@@ -102,7 +108,8 @@ shared and state that can be externalized
     * client is unaware that it is using a proxy
         * proxy performs its work transparently
     
-## Behavioral
+Behavioral
+==================================================================================================================
 behavioral patterns describe how classes and objects interact and communicate with each other
 
 #### Chain of Responsibility
@@ -110,12 +117,13 @@ behavioral patterns describe how classes and objects interact and communicate wi
 * you want to decouple the sender of a request from the object which handles the request
     * you want this decoupling because you want to give multiple objects a chance to handle the request and you don't
     know all the possible handler objects beforehand
-    * a handler will check if it can handle the request, if it CAN'T, it passes the request to the next object in the chain
+    * a handler will check if it can handle the request, if it CAN'T, it passes the request to the next object 
+    in the chain
         * OR you may pass the request down the chain even if a handler can process the request
 
 #### Command
-* **an object which represents an instruction to perform a particular action. Contains all the information necessary for
-the action to be taken**
+* **an object which represents an instruction to perform a particular action. Contains all the information 
+necessary for the action to be taken**
 * ordinary Java statements are perishable
     * i.e. you cannot undo a field assignment
     * cannot directly serialize a sequence of actions (calls)
@@ -204,10 +212,11 @@ another (something needs to trigger a transition)
 * visitor pattern allows you to add new operations that work on objects, **without modifying the class definitions 
 of those objects**
 * it uses an object called the *visitor* that visits all nodes in an object structure
-    * each time our visitor visits a particular object from the structure, that object calls a specific method on visitor,
-    passing itself as an argument
-* each time we need a new operation, we create a subclass of visitor, implement the operation in that class and visit the
-object structure
+    * each time our visitor visits a particular object from the structure, that object calls a specific method 
+    on visitor, passing itself as an argument
+* each time we need a new operation, we create a subclass of visitor, implement the operation in that class and 
+visit the object structure
 * objects themselves only implement an "accept" visit, where the visitor is passed as an argument
-    * objects know about the method in visitor created specifically for it and invoke that method inside the accept method
+    * objects know about the method in visitor created specifically for it and invoke that method inside the 
+    accept method
     
