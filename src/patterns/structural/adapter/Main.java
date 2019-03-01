@@ -1,5 +1,10 @@
 package patterns.structural.adapter;
 
+/**
+ * in this example we want to use the BusinessCardDesigner to design a card. It expects a Customer object as input, but
+ * we currently only have the Employee object.  So we need an adapter to adapt Employee to a customer. So we create
+ * an Employee*Adapter, that takes an employee as input, and adds Customer interface functionality to it.
+ */
 public class Main {
 
 	public static void main(String[] args) {
