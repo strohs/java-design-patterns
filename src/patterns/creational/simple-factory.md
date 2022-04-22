@@ -30,10 +30,10 @@ used to choose the correct class
     * has getInstance method (which is an example of simple factory)
 
 ## Compare and Contrast with SimpleFactory
-SimpleFactory | FactoryMethod
-:---:|:---:
-instantiation logic is moved away from client code (typically into a static method) | more useful when you want to delegate object creation to subclasses
-knows about all classes whose objects it can create | don't know in advance about all product subclasses
+|                                    SimpleFactory                                    |                            FactoryMethod                            |
+|:-----------------------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| instantiation logic is moved away from client code (typically into a static method) | more useful when you want to delegate object creation to subclasses |
+|                 knows about all classes whose objects it can create                 |         don't know in advance about all product subclasses          |
 
 ## Pitfalls
 * criteria used to decide which object to instantiate can get more complex over time, if this happens you should use

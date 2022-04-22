@@ -30,11 +30,10 @@ easily identify that state (immutability etc...)
     * classes still need to be cloneable but the method does the job of cloning the object
 
 ## Compare and Contrast with Singleton
-Prototype | Singleton
-:---:|:---:
-we return a copy of an instance, meaning we get a different instance |  we return same instance every time
-some or even all of the state of instances created with prototype can be different | since the same object is returned, state is always the same
-
+|                                     Prototype                                      |                          Singleton                          |
+|:----------------------------------------------------------------------------------:|:-----------------------------------------------------------:|
+|        we return a copy of an instance, meaning we get a different instance        |             we return same instance every time              |
+| some or even all of the state of instances created with prototype can be different | since the same object is returned, state is always the same |
 
 ## Pitfalls
 * usability of prototype depends upon the number of properties that are immutable or that can be shallow copied
@@ -50,4 +49,4 @@ some or even all of the state of instances created with prototype can be differe
 * in Java we can implement prototype pattern using clone() method
 * objects which have a majority of immutable state are good candidates for prototypes
 * when implementing prototype, pay attention to whether or not you need a deep/shallow copy
-* also insure that the clone is "initialized" (or state is reset) before returning the cloned object
+* also ensure that the clone is "initialized" (or state is reset) before returning the cloned object

@@ -50,11 +50,10 @@ network communications behind the scenes
     * uses both JDK Dynamic and CGLIB
     
 ## Compare   
-Proxy | Decorator
-:---:|:---:
-depending on type of proxy, it doesn't need real object all the time | needs to have a real object in order to work
-purpose of proxy is to provide features like access control, lazy loading, auditing etc... | decorator is meant to add functionality to existing functionality provided by object and is used by client directly
-
+|                                           Proxy                                            |                                                      Decorator                                                      |
+|:------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------:|
+|            depending on type of proxy, it doesn't need real object all the time            |                                    needs to have a real object in order to work                                     |
+| purpose of proxy is to provide features like access control, lazy loading, auditing etc... | decorator is meant to add functionality to existing functionality provided by object and is used by client directly |
 
 ## Pitfalls
 * Java's dynamic proxy only works if your class implements one or more interfaces
